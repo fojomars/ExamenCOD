@@ -33,7 +33,7 @@ public class LoVivido {
         JOptionPane.showMessageDialog(null, "Horas: " + horas, "Numero de horas vividos de " + nombre, JOptionPane.INFORMATION_MESSAGE);
 
         System.exit(0);
-
+// Terminado
     }
 
 }
