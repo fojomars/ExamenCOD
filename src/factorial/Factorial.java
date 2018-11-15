@@ -9,13 +9,13 @@ public class Factorial {
 
         x = 8;
 
-        int i;
+        int z; // Cambie el nombre de la variable i por z
         if (x == 0) {
             y = 1;
         } else {
             y = 1;
-            for (i = x; i >= 1; i--) {
-                y = y * i;
+            for (z = x; z >= 1; z--) {
+                y = y * z;
             }
         }
 
