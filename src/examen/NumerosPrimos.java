@@ -16,7 +16,7 @@ public class NumerosPrimos {
 
     public static void main(String arg[]) {
         int numeroDigitos = 0; // Cambie el nombre de la variable numDigitos por numeroDigitos
-        int ndigitos = 0;
+        int contadorNumDigitos = 0; // Cambie el nombre de la variable nDigitos por contadorNumDigitos
         numeroDigitos = Integer.parseInt(arg[0]);
         if (numeroDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
@@ -30,9 +30,9 @@ public class NumerosPrimos {
                 divisionEntera = divisionEntera / 10;
                 contador++;
             }
-            ndigitos = contador;
+            contadorNumDigitos = contador;
 
-            if (ndigitos == numeroDigitos) {
+            if (contadorNumDigitos == numeroDigitos) {
                 if (i < 4) {
                     p = true;
                 } else {
