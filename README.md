@@ -1,1 +1,1 @@
-Ejercicio 1 hecho
+Las carpetas del examen son las de numerosprimos, lovivido y factorial
