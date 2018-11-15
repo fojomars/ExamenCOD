@@ -15,10 +15,10 @@ public class NumerosPrimos {
     public static boolean p = false;
 
     public static void main(String arg[]) {
-        int numDigitos = 0;
+        int numeroDigitos = 0; // Cambie el nombre de la variable numDigitos por numeroDigitos
         int ndigitos = 0;
-        numDigitos = Integer.parseInt(arg[0]);
-        if (numDigitos <= 0) {
+        numeroDigitos = Integer.parseInt(arg[0]);
+        if (numeroDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
         for (int i = 1; i <= 99999; i++) {
@@ -32,7 +32,7 @@ public class NumerosPrimos {
             }
             ndigitos = contador;
 
-            if (ndigitos == numDigitos) {
+            if (ndigitos == numeroDigitos) {
                 if (i < 4) {
                     p = true;
                 } else {
