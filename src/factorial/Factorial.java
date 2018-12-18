@@ -4,23 +4,23 @@ public class Factorial {
 
     public static void main(String[] args) {
 
-        int x; // Cambie la variable j por x
-        int y; // Cambie el nombre de la variable f por y
+        int numero;
+        int factorial;
 
-        x = 8;
+        numero = 8;
 
-        int z; // Cambie el nombre de la variable i por z
-        if (x == 0) {
-            y = 1;
+        int producto;
+        if (numero == 0) {
+            factorial = 1;
         } else {
-            y = 1;
-            for (z = x; z >= 1; z--) {
-                y = y * z;
+            factorial = 1;
+            for (producto = numero; producto >= 1; producto--) {
+                factorial = factorial * producto;
             }
         }
 
-        System.out.println(y);
-// Terminado
+        System.out.println(factorial);
+
     }
 
 }

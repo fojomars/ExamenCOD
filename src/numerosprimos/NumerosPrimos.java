@@ -12,7 +12,7 @@ public class NumerosPrimos {
     //LIstar los numeros según el numero de digitos indicado
     //Considero solo hasta numeros menores a 100000 (5 digitos), 
     //por el hecho de k buscar numeros primos a partir de 6 digitos, el proceso se hace muy lento.
-    public static boolean p = false;
+    public static boolean primo = false;
 
     public static void main(String arg[]) {
         int numeroDigitos = 0; // Cambie el nombre de la variable numDigitos por numeroDigitos
@@ -21,8 +21,8 @@ public class NumerosPrimos {
         if (numeroDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
-        for (int i = 1; i <= 99999; i++) {
-            int divisionEntera = i;
+        for (int numero = 1; numero <= 99999; numero++) {
+            int divisionEntera = numero;
 
             int contador = 0;
 
@@ -33,21 +33,21 @@ public class NumerosPrimos {
             contadorNumDigitos = contador;
 
             if (contadorNumDigitos == numeroDigitos) {
-                if (i < 4) {
-                    p = true;
+                if (numero < 4) {
+                    primo = true;
                 } else {
-                    if (i % 2 == 0) {
-                        p = false;
+                    if (numero % 2 == 0) {
+                        primo = false;
                     } else {
                         int contador1 = 0;
                         int i1 = 1;
-                        int limite = (i - 1) / 2;
+                        int limite = (numero - 1) / 2;
                         if (limite % 2 == 0) {
                             limite--;
                         }
 
                         while (i1 <= limite) {
-                            if (i % i1 == 0) {
+                            if (numero % i1 == 0) {
                                 contador1++;
                             }
                             i1 += 2;
@@ -57,13 +57,13 @@ public class NumerosPrimos {
                         }
 
                         if (contador1 == 1) {
-                            p = true;
+                            primo = true;
                         }
                     }
                 }
 
-                if (p == true) {
-                    System.out.println(i);
+                if (primo == true) {
+                    System.out.println(numero);
                 }
             }
         }
